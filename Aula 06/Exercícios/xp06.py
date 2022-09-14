@@ -29,5 +29,28 @@
 
 #Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
 
-for casa in range (1,11,1):
-    print(casa)
+#for casa in range (1,11,1):
+ #   print(casa)
+
+# Faça um programa que moste as tabuadas dos números de 1 a 10. 
+
+
+#tabuada completa
+
+#for num in range (1, 11):
+    #print(f"Tabuada do {num}")
+
+    #for num2 in range (1, 11):
+      #  resultado = num * num2
+      #  print(f'{num} x {num2} = {resultado} ') 
+
+lista_amigos = ['Analicia', 'Gabriel', 'Luiz Paulo', 'Jayme', 'Carlos']
+
+for nome in lista_amigos: 
+    print(f'{nome}, obrigado por vir a aula!')
+
+n = int(input('Digite um número aqui ... '))
+
+
+
+    
