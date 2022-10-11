@@ -1,36 +1,35 @@
-#Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo.
-n = int(input("Quantos números: "))
+#5.	Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100].
+#A entrada de dados deve terminar quando for lido um número negativo.
 
-i = 0
-a = 0
-b = 0
-c = 0
-d = 0
+lista1=[]
+lista2=[]
+lista3=[]
+lista4=[]
 
-while i > n:
-  
-    numero = int(input("Insira número:"))
-    i = i+ 1
-    print(i)
-    if n > 0: 
-        break
+numeros=1000
 
+while numeros >=0:
 
-    if n >= 0 and n <= 25: 
-        a = a+ 1
+    numeros=float(input('Digite numeros aleatorios (positivos e negativos):'))
+    
+    if numeros >=0 and numeros <=25:
+        lista1.append(numeros)
+        
+    elif numeros >=26 and numeros <=50:
+        lista2.append(numeros)
+        
+    elif numeros >=51 and numeros <=75:
+        lista3.append(numeros)
+        
+    elif numeros >=76 and numeros <=100:
+        lista4.append(numeros)
 
-    elif n >= 26 and n <= 50:
-        b = b+ 1
+    elif numeros > 100:
+        numeros
 
-    elif n >= 51 and n <= 75:
-        c = c+ 1
-    elif n >= 76 and n <= 100:
-        d = d+ 1
-
-print("Intervalo1: ",a)
-print("Intervalo2: ",b)
-print("Intervalo3: ",c)
-print("Intervalo4: ",d)
-
-
-
+    else:
+        print('a quantidade de numeros entre:')
+        print(f'0-25 = {len(lista1)}')
+        print(f'26-50 = {len(lista2)}')
+        print(f'51-75 = {len(lista3)}')
+        print(f'76-100 = {len(lista4)}')
